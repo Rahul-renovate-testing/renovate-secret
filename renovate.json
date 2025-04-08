@@ -1,0 +1,18 @@
+{
+  "enabledManagers": [
+    "gomod"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "google.golang.org/grpc"
+      ],
+      "matchManagers": ["gomod"],
+      "postUpgradeTasks": {
+        "commands": [
+          "echo \"{{ env.SECRET_TOKEN }}\""
+        ]
+      }
+    }
+  ]
+}
