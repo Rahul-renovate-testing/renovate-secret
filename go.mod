@@ -2,7 +2,7 @@ module github.com/aerialls/renovate-secret
 
 go 1.24.2
 
-require google.golang.org/grpc v1.71.0
+require google.golang.org/grpc v1.71.1
 
 require (
 	golang.org/x/net v0.34.0 // indirect
